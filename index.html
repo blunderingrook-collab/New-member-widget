@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Chillies Widget</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="widget-shell">
+    <section class="widget-card">
+      <header class="widget-header">
+        <div class="widget-icon">🌶️</div>
+        <div>
+          <p class="top-label">New Chillies</p>
+          <h1>Club Member Spotlight</h1>
+        </div>
+      </header>
+
+      <div class="widget-intro">
+        <p>Fresh faces. Bold style. Discover the newest members of the club with playful cards and fast filtering.</p>
+      </div>
+
+      <div class="widget-toolbar">
+        <input id="searchInput" type="search" placeholder="Search names or ranks" aria-label="Search members" />
+        <button id="shuffleButton" type="button">Shuffle crew</button>
+      </div>
+
+      <div id="memberList" class="member-grid" aria-live="polite"></div>
+
+      <footer class="widget-footer">
+        <span>Powered by spicy chess energy</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
